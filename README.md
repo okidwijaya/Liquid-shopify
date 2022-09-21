@@ -1,5 +1,5 @@
 # Liquid-shopify
 
-##Learning Liquid
+## Learning Liquid
 
-###Experince of learning liquid
+### Experince of learning liquid
