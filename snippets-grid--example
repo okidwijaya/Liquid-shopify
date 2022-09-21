@@ -1,0 +1,21 @@
+{%- if block.settings.subheading != blank or block.settings.title != blank or block.settings.content != blank -%}
+  <div class="Grid__Item custom_grid-item">
+    {%- if block.settings.subheading != blank -%}
+      <h3 class="Column__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</h3>
+    {%- endif -%}
+
+    {%- if block.settings.title != blank -%}
+      <h2 class="Column__Heading Heading u-h1 Heading--{{ section.settings.heading_alignment }}">{{ block.settings.title | escape }}</h2>
+    {%- endif -%}
+
+    {%- if block.settings.content != blank -%}
+      <div class="Column__Description Rte">
+        {{ block.settings.content }}
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.link_text != blank -%}
+      <a href="{{ block.settings.link_url }}" class="Link Link--underline">{{ block.settings.link_text | escape }}</a>
+    {%- endif -%}
+  </div>
+{%- endif -%}
