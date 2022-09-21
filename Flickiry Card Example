@@ -1,0 +1,7 @@
+  <div class="carousel" data-flickity='{ "initialIndex":1 }'>
+    {%- for product in product_recommendation -%}
+      <div class="carousel-cell">
+        {% render 'product-item', product: product, show_labels: true %}
+      </div>
+    {%- endfor -%}
+  </div>
